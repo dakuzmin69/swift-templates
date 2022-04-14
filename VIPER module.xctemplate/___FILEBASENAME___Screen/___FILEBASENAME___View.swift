@@ -25,7 +25,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     // MARK: Private properties
 
     private let delegateGetter: () -> I___FILEBASENAMEASIDENTIFIER___Delegate?
-    private var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate? { delegateGetter() }
+    private weak var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate? { delegateGetter() }
 
     // MARK: UI
 
