@@ -2,6 +2,14 @@
 
 import Foundation
 
+// MARK: - I___FILEBASENAMEASIDENTIFIER___Delegate
+
+protocol I___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
+
+    // Set up protocol
+
+}
+
 // MARK: - I___FILEBASENAMEASIDENTIFIER___
 
 protocol I___FILEBASENAMEASIDENTIFIER___ {
