@@ -24,8 +24,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: Private properties
 
-    private let delegateGetter: () -> I___FILEBASENAMEASIDENTIFIER___Delegate?
-    private var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate? { delegateGetter() }
+    private weak var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate?
 
     // MARK: UI
 
@@ -56,8 +55,8 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: Init
 
-    init(delegateGetter: @escaping () -> I___FILEBASENAMEASIDENTIFIER___Delegate?) {
-        self.delegateGetter = delegateGetter
+    init(delegate: I___FILEBASENAMEASIDENTIFIER___Delegate?) {
+        self.delegate = delegate
 
         super.init(frame: .zero)
 
