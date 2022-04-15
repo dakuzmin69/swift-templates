@@ -17,7 +17,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: I___FILEBASENAMEASIDENTIFIER___ {
     // MARK: Private properties
 
     private let view: I___VARIABLE_productName:identifier___View
-    private let _viewController: I___VARIABLE_productName:identifier___ViewController
+    private let realViewController: I___VARIABLE_productName:identifier___ViewController
     private let presenter: I___VARIABLE_productName:identifier___Presenter
     private let router: IRouter
     private let interactor: I___VARIABLE_productName:identifier___Interactor
@@ -25,7 +25,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: I___FILEBASENAMEASIDENTIFIER___ {
     // MARK: Public properties
 
     var viewController: UIViewController {
-        _viewController
+        realViewController
     }
 
     // MARK: Init
@@ -40,10 +40,10 @@ final class ___FILEBASENAMEASIDENTIFIER___: I___FILEBASENAMEASIDENTIFIER___ {
         interactor = ___VARIABLE_productName:identifier___Interactor(presenterGetter: { presenterGetter })
         presenter = ___VARIABLE_productName:identifier___Presenter(viewGetter: { viewGetter }, viewControllerGetter: { viewControllerGetter }, router: router, interactor: interactor)
         view = ___VARIABLE_productName:identifier___View(delegate: presenter)
-        _viewController = CollectionsViewController(mainView: view, presenter: presenter)
+        realViewController = CollectionsViewController(mainView: view, presenter: presenter)
 
         presenterGetter = presenter
-        viewControllerGetter = _viewController
+        viewControllerGetter = realViewController
         viewGetter = view
     }
 
