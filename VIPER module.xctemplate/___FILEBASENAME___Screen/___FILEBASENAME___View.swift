@@ -2,17 +2,17 @@
 
 import UIKit
 
-// MARK: - I___FILEBASENAMEASIDENTIFIER___
+// MARK: - I___FILEBASENAMEASIDENTIFIER___Delegate
 
-protocol I___FILEBASENAMEASIDENTIFIER___: UIView {
+protocol I___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
 
     // Set up protocol
 
 }
 
-// MARK: - I___FILEBASENAMEASIDENTIFIER___Delegate
+// MARK: - I___FILEBASENAMEASIDENTIFIER___
 
-protocol I___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
+protocol I___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // Set up protocol
 
@@ -25,7 +25,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     // MARK: Private properties
 
     private let delegateGetter: () -> I___FILEBASENAMEASIDENTIFIER___Delegate?
-    private weak var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate? { delegateGetter() }
+    private var delegate: I___FILEBASENAMEASIDENTIFIER___Delegate? { delegateGetter() }
 
     // MARK: UI
 
