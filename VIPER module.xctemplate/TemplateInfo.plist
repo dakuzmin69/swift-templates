@@ -5,9 +5,13 @@
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>VIPER module</string>
+	<string>VIPER Module</string>
 	<key>Summary</key>
-	<string>VIPER module</string>
+	<string>VIPER Module</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
 	<key>Image</key>
 	<dict>
 		<key>FileTypeIcon</key>
