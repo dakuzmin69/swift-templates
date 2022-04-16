@@ -40,7 +40,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: I___FILEBASENAMEASIDENTIFIER___ {
         interactor = ___VARIABLE_productName:identifier___Interactor(presenterGetter: { presenterGetter })
         presenter = ___VARIABLE_productName:identifier___Presenter(viewGetter: { viewGetter }, viewControllerGetter: { viewControllerGetter }, router: router, interactor: interactor)
         view = ___VARIABLE_productName:identifier___View(delegate: presenter)
-        realViewController = CollectionsViewController(mainView: view, presenter: presenter)
+        realViewController = ___VARIABLE_productName:identifier___ViewController(mainView: view, presenter: presenter)
 
         presenterGetter = presenter
         viewControllerGetter = realViewController
